@@ -12,6 +12,10 @@ const routes: Routes = [
     path:'home',
     redirectTo: ''
   },
+  {
+    path:'parameters',
+    loadChildren: () => import('./modules/parameters/parameters.module').then(m => m.ParametersModule)
+  },
   /** el ultimo, comodin redirect */
   {
     path: '**',
