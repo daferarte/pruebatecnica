@@ -8,7 +8,7 @@ import { CTBCreationComponent } from './CountryTB/ctb-creation/ctb-creation.comp
 import { CTBListComponent } from './CountryTB/ctb-list/ctb-list.component';
 import { UserCreationComponent } from './User/user-creation/user-creation.component';
 import { UserListComponent } from './User/user-list/user-list.component';
-
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -21,7 +21,9 @@ import { UserListComponent } from './User/user-list/user-list.component';
   ],
   imports: [
     CommonModule,
-    ParametersRoutingModule
+    ParametersRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class ParametersModule { }

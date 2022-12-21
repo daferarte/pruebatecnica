@@ -1,1 +1,122 @@
-<p>user-creation works!</p>
+
+<div class="row">
+    <form [formGroup]="fgValidator" class="col s12">
+        <fieldset>
+            <legend>Creación de usuario</legend>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" formControlName="name" type="text" class="validate">
+          <label for="first_name">Nombres</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" formControlName="lastName" type="text" class="validate">
+          <label for="last_name">Apellidos</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+            <input type="checkbox" formControlName="isMilitar" id="is_militar" />
+          <label for="is_militar">¿Es militar?</label>
+        </div>
+        <div class="input-field col s6">
+            <input type="checkbox" formControlName="isTemporal" id="is_temporal" />
+          <label for="first_name">¿Es temporal?</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" formControlName="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <input id="username" type="text" formControlName="username" class="validate">
+          <label for="username">Usuario</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="password" type="password" formControlName="password" class="validate">
+          <label for="password">Contraseña</label>
+        </div>
+        <div class="input-field col s6">
+            <input id="password1" type="password" formControlName="password" class="validate">
+            <label for="password1">Confirmación contraseña</label>
+          </div>
+      </div>
+    </fieldset>
+    <fieldset>
+        <legend>Documento de usuario</legend>
+  <div class="row">
+    <div class="input-field col s6">
+      <input id="document" formControlName="document" type="text" class="validate">
+      <label for="document">Documento</label>
+    </div>
+    <div class="input-field col s6">
+      <input id="placeExpedition" formControlName="placeExpedition" type="text" class="validate">
+      <label for="placeExpedition">Lugar de Expedición</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6">
+        <input type="date" formControlName="dateExpedition" id="dateExpedition" />
+      <label for="dateExpedition">Fecha de expedición</label>
+    </div>
+    <div class="input-field col s6">
+        <input type="text" formControlName="typeDocument" id="typeDocument" />
+      <label for="typeDocument">Tipo de documento</label>
+    </div>
+  </div>
+  
+</fieldset>
+<fieldset>
+    <legend>Contacto de usuario</legend>
+<div class="row">
+<div class="input-field col s6">
+  <input id="address" formControlName="address" type="text" class="validate">
+  <label for="address">Dirección</label>
+</div>
+<div class="input-field col s6">
+  <input id="city" formControlName="city" type="text" class="validate">
+  <label for="city">Ciudad</label>
+</div>
+</div>
+<div class="row">
+<div class="input-field col s6">
+    <input type="text" formControlName="phone" id="phone" />
+  <label for="phone">Teléfono</label>
+</div>
+<div class="input-field col s6">
+    <input type="text" formControlName="cellPhone" id="cellPhone" />
+  <label for="cellPhone">Celular</label>
+</div>
+</div>
+<div class="row">
+    <div class="input-field col s6">
+        <input type="text" formControlName="emergencyName" id="emergencyName" />
+      <label for="emergencyName">Nombre de emergencia</label>
+    </div>
+    <div class="input-field col s6">
+        <input type="text" formControlName="emergencyPhone" id="emergencyPhone" />
+      <label for="emergencyPhone">Teléfono de emergencia</label>
+    </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="countryId" type="text" formControlName="countryId" class="validate">
+          <label for="countryId">País</label>
+        </div>
+      </div>
+</fieldset>
+
+      <div class="row">
+        <div class="input-field col s12">
+            <button (click)="UserRegistriFN()" class="btn waves-effect waves-light" type="submit" name="action">Agregar
+                <i class="material-icons right">send</i>
+              </button>
+        </div>
+      </div>
+    </form>
+  </div>
